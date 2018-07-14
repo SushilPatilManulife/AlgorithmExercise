@@ -14,7 +14,8 @@ public class Palindrome {
 		length=inputString.length();
 		res = true;
 		for(int i=0; i<length;i++){
-			if(inputString.substring(length-1, length).equals(inputString.substring(i,i+1))){
+			if(inputString.substring(length-1, length)
+					.equals(inputString.substring(i,i+1))){
 				res=true;
 				length--;
 			}
@@ -23,7 +24,9 @@ public class Palindrome {
 				break;
 			}
 		}
-		if(res) System.out.println("Input \""+inputString+"\" is Palindrome"); 
-		else System.out.println("Input \""+inputString+"\" is Not Palindrome");
+		if(res) System.out.println("Input \""
+				+ ""+inputString+"\" is Palindrome"); 
+		else System.out.println("Input \""
+				+ ""+inputString+"\" is Not Palindrome");
 	}
 }
