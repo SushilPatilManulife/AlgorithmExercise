@@ -1,15 +1,6 @@
-package com.fdmgroup.model;
+package com.fdmgroup.BST;
 
 public class BinarySearchTree {
-	class Node{
-		int key;
-		Node left, right;
-		public Node(int item) {
-			super();
-			key=item;
-			left=right=null;	
-		}		
-	}
 	Node root;
 	public BinarySearchTree() {
 		root=null;
@@ -41,6 +32,13 @@ public class BinarySearchTree {
 			}
 	}
 	public static void main(String[] args) {
-		
+		BinarySearchTree bst = new BinarySearchTree();
+		bst.insert(10);
+		bst.insert(100);
+		bst.insert(9);
+		bst.insert(20);
+		bst.insert(40);
+		bst.insert(1);
+		bst.inorder();
 	}
 }
