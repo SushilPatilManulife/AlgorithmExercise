@@ -14,10 +14,12 @@ public class MaximumJump {
 		for(int i = 0 ; i < max ; i++)
 			input[i] = sc.nextInt();
 		int largest = input[0];
-		boolean result=false;
+		boolean result=true;
 		for(int i = 0 ; i < max-1 ; i++){
-			if(largest <= i && input[i] == 0)
-				result=false;
+			if(largest <= i && input[i] == 0) {
+				result=false; 
+				break;
+			}
 			if(input[i]+i>largest)
 				largest=input[i]+i;
 			if(largest>=max-1)
